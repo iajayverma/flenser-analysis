@@ -1,0 +1,43 @@
+# Flenser Analysis
+
+*Have you ever been handed a dataset you've never seen before?*
+
+Flenser is a simple, minimal, automated exploratory data analysis tool. It runs a set of simple tests against each column within a dataset,
+and outputs a HTML file noting which tests trigger per column, alongside relevant outputs.
+
+Flenser is intended to be run at the earliest stages of data exploration, when you have no familiarity with the dataset.
+It will do its best to tell you what is actually going on in the dataset, regardless of what is *supposed* to be going on in the dataset.
+
+Flenser is designed to be helpful, not 'helpful': it will not attempt to modify or make assumptions about your dataset. Instead it will apply each simple test,
+to every column, and show you outputs that will allow your human brain to make decisions about what is actually going on.
+
+Additional tests can be added by modifying the `Test` dataclass.
+
+### How to run
+python3 flenser.py "*filename.csv*"
+
+Flenser will print its default list of nans. You may specify one or more additional nan values to use, as follows:
+
+python3 flenser.py "*filename.csv*" "*nan1*" "*nan2*" "*nan3*"...
+
+### With thanks to
+
+Recurse <br>
+Kelly F <br>
+Rebecca H <br>
+Azhad S <br>
+Shivam S <br>
+Christina M <br>
+Adam K <br>
+Edith V <br>
+Justin R <br>
+
+## Repository Maintainer
+
+Ajay Verma
+
+## Attribution
+
+This repository is based on an open-source project distributed under its original license. The original work is by the authors of JohnMcCambridge/flenser.
+
+All original copyright notices and the LICENSE file are preserved. This copy adds only repository-level metadata; the source code remains the work of the original authors.
